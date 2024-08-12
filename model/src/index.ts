@@ -1,3 +1,3 @@
-const course: string = "Design Patterns!";
+const title: string = "Design Patterns!";
 
-console.log(`Hello ${course}`);
+console.log(`Hello ${title}`);
