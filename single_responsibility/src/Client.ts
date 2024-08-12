@@ -14,8 +14,4 @@ export default class Client {
   delete(): void {
     console.log("Client deleted");
   }
-
-  sendEmail(): void {
-    console.log("Email sent for client");
-  }
 }
