@@ -1,3 +1,11 @@
-const course: string = "Design Patterns!";
+import Client from "./Client";
+import EmailSender from "./EmailSender";
 
-console.log(`Hello ${course}`);
+const title: string = "Single Responsibility Principle!";
+
+console.log(`Hello ${title}`);
+
+const client = new Client("isaacmuniz@protonmail.com");
+const emailSender = new EmailSender(client);
+
+emailSender.sendEmail();

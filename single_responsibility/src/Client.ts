@@ -1,4 +1,10 @@
 export default class Client {
+  email: string;
+
+  constructor(email: string) {
+    this.email = email;
+  }
+
   create(): void {
     console.log("Client created");
   }
