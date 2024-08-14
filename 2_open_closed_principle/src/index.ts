@@ -1,15 +1,8 @@
-import TypeVehicle from "./TypeVehicle";
-import Vehicle from "./vehicles/Vehicle";
+import Car from "./vehicles/Car";
+import Motorcycle from "./vehicles/Motorcycle";
 
-const type = TypeVehicle.CAR;
-let vehicle;
+const car = new Car("Yellow", 2022, 2.0, 2.0, 4);
 
-if (type === TypeVehicle.CAR) {
-  vehicle = new Vehicle("Amarelo", 2022, 2.0, 2.0, 4);
-  vehicle.car();
-} else if (type === TypeVehicle.MOTORCYCLE) {
-  //! Dirty code
-  //! Motorcycles always have 1 seat, and do not have doors.
-  vehicle = new Vehicle("Vermelho", 2022, 1.0, 1, 0);
-  vehicle.motorcycle();
-}
+const motorcycle = new Motorcycle("Red", 2022, 1.0);
+
+console.log(car, motorcycle);
